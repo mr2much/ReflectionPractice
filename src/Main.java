@@ -5,6 +5,7 @@ public class Main {
         BankAccount acct1 = new BankAccount("1234");
         doWork(acct1);
         showClassWithName();
+        showClassWithTypeLiteral();
     }
 
     public static void doWork(Object obj) {
@@ -14,6 +15,11 @@ public class Main {
 
     public static void showClassWithName() throws ClassNotFoundException {
         Class<?> theClass = Class.forName("com.lockward.finances.accounts.BankAccount");
+        SimpleReflection.showName(theClass);
+    }
+
+    public static void showClassWithTypeLiteral() {
+        Class<?> theClass = BankAccount.class;
         SimpleReflection.showName(theClass);
     }
 }
