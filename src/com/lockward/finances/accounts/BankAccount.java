@@ -1,3 +1,5 @@
+package com.lockward.finances.accounts;
+
 public class BankAccount {
     private final String id;
     private int balance = 0;
