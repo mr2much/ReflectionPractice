@@ -19,7 +19,7 @@ public class Main {
     }
 
     public static void showClassWithTypeLiteral() {
-        Class<?> theClass = BankAccount.class;
+        Class<BankAccount> theClass = BankAccount.class;
         SimpleReflection.showName(theClass);
     }
 }
